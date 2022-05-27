@@ -15,7 +15,6 @@ BST<std::string> makeTree(const char* filename) {
       return Drevo;
   }
   while (!fin.eof()) {
-      word = "";
       tempr = fin.get();
       if (tempr >= 'A') {
           if (tempr <= 'Z') {
