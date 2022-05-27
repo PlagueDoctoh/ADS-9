@@ -9,7 +9,7 @@ BST<std::string> makeTree(const char* filename) {
   BST<std::string> Drevo;
   std::ifstream fin(filename);
   char tempr;
-  std::string word = " ";
+  std::string word = "";
   if (!fin.is_open()) {
       std::cout << "Error! File can't be open!" << std::endl;
       return Drevo;
@@ -27,7 +27,7 @@ BST<std::string> makeTree(const char* filename) {
           }
       } else {
           Drevo.Add(word);
-          word = " ";
+          word = "";
       }
   }
   fin.close();
