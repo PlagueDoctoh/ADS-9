@@ -15,6 +15,7 @@ BST<std::string> makeTree(const char* filename) {
       return Drevo;
   }
   while (!fin.eof()) {
+      word = "";
       tempr = fin.get();
       if (tempr >= 'A') {
           if (tempr <= 'Z') {
@@ -26,7 +27,7 @@ BST<std::string> makeTree(const char* filename) {
               word = word + tempr;
           }
       } else {
-          MyTree.Add(word);
+          Drevo.Add(word);
           word = " ";
       }
   }
